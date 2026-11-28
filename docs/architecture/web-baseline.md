@@ -1,6 +1,8 @@
 # TPB-17 · Architecture decision draft
 
-**Decision requested · 27 November 2026.** Use a statically served responsive website for the first anonymous three-question round. Keep the versioned, reviewed question bank and its SVG files alongside the site. Keep answers in page memory. Engineering Lead owns D1. The project owner has supplied the repository. Stack and runner approval are pending.
+**Frontend decision.** The project owner selected React for the responsive website. TPB-20 will render the entry page with React. TypeScript and Vite are the proposed language and build tool.
+
+**Architecture proposal · 27 November 2026.** Use a statically served responsive website for the first anonymous three-question round. Keep the versioned, reviewed question bank and its SVG files alongside the site. Keep answers in page memory. Engineering Lead owns D1. The project owner has supplied the repository. The static delivery model, build setup and CI runner remain proposed.
 
 ## Source inventory
 
@@ -30,13 +32,13 @@ At the assessed main revision there was no application code, content bank, test 
 
 ## Proposed implementation and ownership
 
-- **Engineering Lead and web implementer (TPB-20)** — target the existing repository, working on a feature branch from main. Proposed skeleton: `web/` with TypeScript, Vite, a pinned Node LTS toolchain and committed npm lockfile. From `web/`, propose `npm ci`, `npm run build` → `dist/`, and `npm run preview` for local HTTP serving. These are proposed interfaces for the skeleton.
+- **Engineering Lead and web implementer (TPB-20)** — target the existing repository, working on a feature branch from main. The proposed skeleton pairs React with TypeScript and Vite under `web/`, using a pinned Node LTS toolchain and committed npm lockfile. From `web/`, propose `npm ci`, `npm run build` → `dist/`, and `npm run preview` for local HTTP serving. These are proposed interfaces for the skeleton.
 - **Content Lead** — owns approval of the originals. Package only a release-checked bank and its matching asset directory, using the TPB-19 v1 contract when available. Keep calibration examples and test banks outside the distributable site.
 - **QE and Engineering (TPB-21)** — propose a GitHub Actions Linux job that runs the same locked install/build, entry-heading smoke and available Python fixture checks from a clean checkout. For a release candidate, check release mode and confirm assets resolve from the built site. A missing heading or invalid asset must fail its corresponding check.
 - **Project owner and Engineering Lead** — revisit an API if cross-device progress, restricted answer delivery or independently published content becomes a confirmed requirement. Hosting and data policy decisions remain with their respective owners.
 
 ## Unblock and verification
 
-The source destination is established. To start the TPB-20 skeleton, the Engineering Lead records D1 approval for the static approach, working location and toolchain/build interface above, or supplies the chosen equivalent. Confirm the permitted CI runner for TPB-21. A production host is unnecessary for a local skeleton.
+The repository and React frontend are confirmed. To start the TPB-20 skeleton, the Engineering Lead records D1 approval for the static approach, working location and toolchain/build interface above, or supplies the chosen equivalent. Confirm the permitted CI runner for TPB-21. A production host is unnecessary for a local skeleton.
 
 V-001 was reviewed against the fresh-start and responsive-web instructions, REQ-001/002 and the recorded checkout inventory. No executable application check applies to this decision draft. The decision and owner review are open.
