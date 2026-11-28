@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" role="img">
+  <title>A square with a dot at the top left.</title>
+  <rect x="4" y="4" width="52" height="52" fill="white" stroke="#182334" stroke-width="3"/>
+  <circle cx="15" cy="15" r="5" fill="#182334"/>
+</svg>

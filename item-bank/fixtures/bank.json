@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "fixture-verbal-01",
+      "domain": "verbal",
+      "status": "draft",
+      "skill": "Part-to-whole analogy",
+      "stem": "A chapter is one part of a book. A scene is one part of which of these?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A stage"
+        },
+        {
+          "id": "B",
+          "text": "A play"
+        },
+        {
+          "id": "C",
+          "text": "A scriptwriter"
+        },
+        {
+          "id": "D",
+          "text": "An audience"
+        }
+      ],
+      "key": "B",
+      "explanation": "Chapters fit together to make a book. In the same way, scenes fit together to make a play. The stage is where a play happens."
+    },
+    {
+      "id": "fixture-quantitative-01",
+      "domain": "quantitative",
+      "status": "draft",
+      "skill": "Compare equal groups",
+      "stem": "Mina lays out 4 rows of 7 tiles. Jules lays out 3 rows of 8 tiles. How many tiles must Jules add to have as many as Mina?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1 tile"
+        },
+        {
+          "id": "B",
+          "text": "3 tiles"
+        },
+        {
+          "id": "C",
+          "text": "4 tiles"
+        },
+        {
+          "id": "D",
+          "text": "8 tiles"
+        }
+      ],
+      "key": "C",
+      "explanation": "Mina has 4 × 7 = 28 tiles. Jules has 3 × 8 = 24 tiles. The difference is 28 − 24 = 4, so Jules needs 4 more tiles."
+    },
+    {
+      "id": "fixture-nonverbal-01",
+      "domain": "nonverbal",
+      "status": "draft",
+      "skill": "Track a rotating position",
+      "stem": "Read the three squares from left to right. The dot is at the top left, then the top right, then the bottom right. If it keeps moving the same way, which square comes next?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A square with a dot at the top right.",
+          "svg": "fixtures/option-a.svg"
+        },
+        {
+          "id": "B",
+          "text": "A square with a dot at the bottom left.",
+          "svg": "fixtures/option-b.svg"
+        },
+        {
+          "id": "C",
+          "text": "A square with a dot at the top left.",
+          "svg": "fixtures/option-c.svg"
+        },
+        {
+          "id": "D",
+          "text": "A square with a dot at the bottom right.",
+          "svg": "fixtures/option-d.svg"
+        }
+      ],
+      "key": "B",
+      "explanation": "The dot moves one corner clockwise each time. After the bottom right, the next corner is the bottom left.",
+      "stemSvg": "fixtures/sequence.svg"
+    }
+  ]
+}

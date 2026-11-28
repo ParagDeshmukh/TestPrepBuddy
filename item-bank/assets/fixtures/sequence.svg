@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 60" role="img">
+  <title>Three squares with dots at top left, top right and bottom right in order.</title>
+  <rect x="4" y="4" width="52" height="52" fill="white" stroke="#182334" stroke-width="3"/>
+  <circle cx="15" cy="15" r="5" fill="#182334"/>
+  <rect x="76" y="4" width="52" height="52" fill="white" stroke="#182334" stroke-width="3"/>
+  <circle cx="117" cy="15" r="5" fill="#182334"/>
+  <rect x="148" y="4" width="52" height="52" fill="white" stroke="#182334" stroke-width="3"/>
+  <circle cx="189" cy="45" r="5" fill="#182334"/>
+</svg>
