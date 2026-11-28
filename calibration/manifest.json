@@ -1,0 +1,27 @@
+[
+  {
+    "id": "H9",
+    "structural": "missing-asset",
+    "editorial": "reject"
+  },
+  {
+    "id": "K4",
+    "structural": "pass",
+    "editorial": "pass"
+  },
+  {
+    "id": "M5",
+    "structural": "pass",
+    "editorial": "reject"
+  },
+  {
+    "id": "N7",
+    "structural": "bad-key",
+    "editorial": "reject"
+  },
+  {
+    "id": "R2",
+    "structural": "pass",
+    "editorial": "pass"
+  }
+]

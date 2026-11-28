@@ -1,0 +1,42 @@
+{
+  "id": "R2",
+  "domain": "nonverbal",
+  "prompt": {
+    "text": "Read the three squares from left to right. The dot moves one quarter turn clockwise each time. Which square comes next?",
+    "svg": "assets/sequence.svg",
+    "alt": "Three squares in reading order, with dots at upper left, upper right, then lower right."
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Dot at upper right",
+      "svg": "assets/tile-2.svg"
+    },
+    {
+      "id": "B",
+      "text": "Dot at lower left",
+      "svg": "assets/tile-4.svg"
+    },
+    {
+      "id": "C",
+      "text": "Dot at upper left",
+      "svg": "assets/tile-1.svg"
+    },
+    {
+      "id": "D",
+      "text": "Dot at lower right",
+      "svg": "assets/tile-3.svg"
+    }
+  ],
+  "key": "B",
+  "rationale": {
+    "worked": "Follow the dot around the square: upper left → upper right → lower right → lower left. B shows lower left.",
+    "distractors": {
+      "A": "Upper right moves back one corner.",
+      "C": "Upper left skips ahead two corners.",
+      "D": "Lower right repeats the last panel."
+    }
+  },
+  "expectedVerdict": "pass",
+  "reviewReason": "B alone shows the next corner."
+}

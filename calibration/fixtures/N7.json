@@ -1,0 +1,36 @@
+{
+  "id": "N7",
+  "domain": "quantitative",
+  "prompt": {
+    "text": "Look at the numbers: 2, 5, 9, 14, __. Each jump is one larger than the jump before it. Which number comes next?"
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "18"
+    },
+    {
+      "id": "B",
+      "text": "19"
+    },
+    {
+      "id": "C",
+      "text": "20"
+    },
+    {
+      "id": "D",
+      "text": "21"
+    }
+  ],
+  "key": "E",
+  "rationale": {
+    "worked": "The jumps are +3, +4 and +5. The next jump is +6, so 14 + 6 = 20.",
+    "distractors": {
+      "A": "18 adds 4, reusing the second jump.",
+      "B": "19 repeats the last jump of 5.",
+      "D": "21 adds 7, skipping the required jump of 6."
+    }
+  },
+  "expectedVerdict": "reject",
+  "reviewReason": "The intended answer is C. The stored key E is outside A–D."
+}
